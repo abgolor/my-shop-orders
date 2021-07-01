@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/spl_pn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.35"
+            android:gravity="left"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/spinnaker"
+            android:text="Product Name"
+            android:textColor="@color/mirage"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/spl_case"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/spinnaker"
+            android:text="Case"
+            android:textColor="@color/mirage"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/spl_oq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/spinnaker"
+            android:text="Order Qty"
+            android:textColor="@color/mirage"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Qty Packed">
+
+
+          <!--  android:layout_marginLeft="27dp"
+            android:layout_weight="0.20"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:textColorHint="@color/mirage" -->
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/spl_qp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/spinnaker"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/mirage"
+                android:textSize="25sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:hint="Lans">
+
+
+        <!--  android:layout_marginLeft="27dp"
+          android:layout_weight="0.20"
+          android:layout_marginRight="30dp"
+          android:layout_marginTop="25dp"
+          android:textColorHint="@color/mirage" -->
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/spl_pl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spinnaker"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/mirage"
+            android:textSize="25sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <!--   <LinearLayout
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_width="match_parent">
+
+       <TextView
+           android:id="@+id/spl_pn"
+           android:layout_width="250dp"
+           android:layout_height="500dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_weight="0.20"
+           android:fontFamily="@font/spinnaker"
+           android:gravity="left"
+           android:text="750ml Johnnie Walker Blue Label Scotch Whisky"
+           android:textColor="@color/mirage"
+           android:textSize="30sp" />
+
+       <TextView
+               android:id="@+id/spl_oq"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="27dp"
+               android:layout_marginTop="20dp"
+               android:layout_weight="0.20"
+               android:fontFamily="@font/spinnaker"
+               android:text="100"
+               android:gravity="center"
+               android:textColor="@color/mirage"
+               android:textSize="30sp" />
+
+                 <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:fontFamily="@font/spinnaker"
+            android:text="Qty Packed"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="27dp"
+               android:layout_weight="0.20"
+               android:layout_marginRight="30dp"
+               android:layout_marginTop="25dp"
+               android:textColorHint="@color/mirage"
+               android:hint="20">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/spl_qp"
+                   android:fontFamily="@font/spinnaker"
+                   android:inputType="number"
+                   android:gravity="center"
+                   android:textColor="@color/mirage"
+                   android:textSize="30sp" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+       </LinearLayout>-->
+
+</LinearLayout>

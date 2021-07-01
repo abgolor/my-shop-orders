@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="SETUP YOUR SHOP"
+                android:textColor="@color/mirage_dark"
+                android:textSize="50dp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="1. Make sure your My Shop Order spreadsheet is named 'Orders' and looks like this: "
+                    android:textColor="@color/mirage_dark"
+                    android:textSize="45dp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/spreadsheet_sample" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="2. Provide a link to the spreadsheet in the box below and click NEXT "
+                    android:textColor="@color/mirage_dark"
+                    android:textSize="45dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:hint="Provide full link to My Shop Order spreadsheet"
+                    android:textColorHint="@color/mirage_dark">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/setupEnteredLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/spinnaker"
+                        android:gravity="left"
+                        android:inputType="textWebEditText"
+                        android:textColor="@color/mirage_dark"
+                        android:textSize="30sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/setupBtn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/mirage_dark"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="NEXT"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

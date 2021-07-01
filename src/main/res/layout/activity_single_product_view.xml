@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SingleProductView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/sp_ot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Order #121212"
+                android:textColor="@color/mirage_dark"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.33"
+                android:fontFamily="@font/spinnaker"
+                android:text="ORDER OVERVIEW"
+                android:textColor="@color/mirage_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeLeftToVote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="45dp"
+                android:fontFamily="@font/spinnaker"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="0.41"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="Order Number:"
+                    android:textColor="@color/mirage_dark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/sp_po"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="#121212"
+                    android:textColor="@color/mirage"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="0.41"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="SPLY#:"
+                    android:textColor="@color/mirage_dark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/sp_sply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="GOLOR ABRAHAM AJIRIOGHENE"
+                    android:textColor="@color/mirage"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="0.41"
+                    android:contentDescription="Political Party"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="Total Products:"
+                    android:textColor="@color/mirage_dark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/sp_tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="20"
+                    android:textColor="@color/mirage"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/spinnaker"
+                    android:text="PRODUCT OVERVIEW"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/orderNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.35"
+                        android:fontFamily="@font/spinnaker"
+                        android:gravity="center"
+                        android:text="Product"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/orderNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.20"
+                        android:fontFamily="@font/spinnaker"
+                        android:gravity="center"
+                        android:text="Case"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/orderName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.20"
+                        android:fontFamily="@font/spinnaker"
+                        android:gravity="center"
+                        android:text="O. Qty"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.200"
+                        android:fontFamily="@font/spinnaker"
+                        android:gravity="left"
+                        android:text="Q. Pkd"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/orderNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.20"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/spinnaker"
+                        android:gravity="left"
+                        android:text="Lans"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                 <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ListView
+                            android:id="@+id/sp_pl"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="350dip"
+                            android:layout_weight="1"
+                            android:nestedScrollingEnabled="true"
+                            android:layout_marginRight="25dp" />
+
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <Button
+                android:id="@+id/sp_btn_pkd"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/mirage_dark"
+                android:fontFamily="@font/poppins_medium"
+                android:text="MARK ORDER AS PACKED"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

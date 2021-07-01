@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mirage_dark"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".SplashScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splashIcon"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="60dp"
+            android:src="@drawable/my_shop_logo"/>
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="MY SHOP ORDERS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

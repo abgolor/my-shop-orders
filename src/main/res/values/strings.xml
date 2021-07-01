@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Shop Orders</string>
+    <string name="content_description_for_internet_not_connected">Internet Not Connected Icon</string>
+    <string name="header_oops">OOPS!</string>
+    <string name="subheader_no_internet_connection">No Internet Connection</string>
+    <string name="error_advice">Please check your connection</string>
+    <string name="btn_text">RETRY</string>
+</resources>
